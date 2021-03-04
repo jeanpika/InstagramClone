@@ -67,11 +67,11 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     // TODO: navigate to the main activity if the user has signed in properly
                     goMainActivity();
+                    Log.i(TAG, "Success!");
                     Toast.makeText(LoginActivity.this, "Success!", Toast.LENGTH_SHORT).show();
                 }
             });
         }
-
 
     private void loginUser(String username, String password) {
         Log.i(TAG, "Attempting to login user " + username);
